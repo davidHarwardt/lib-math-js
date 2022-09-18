@@ -1,12 +1,12 @@
 {
-    "name": "@dvmujic/lib",
+    "name": "@dvmujic/math",
     "version": "0.1.0",
-    "description": "a library",
+    "description": "a math library",
     "module": "lib/es6/index.js",
     "sideEffects": false,
     "repository": {
         "type": "git",
-        "url": "<url>"
+        "url": "github.com/davidHarwardt/lib-math-js"
     },
     "files": [
         "lib",
