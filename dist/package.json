@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "a math library",
     "module": "lib/es6/index.js",
+    "types": "lib/es6/index.d.ts",
     "sideEffects": false,
     "repository": {
         "type": "git",
