@@ -1,6 +1,6 @@
 {
     "name": "@david.harwardt/math",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "a math library",
     "module": "lib/es6/index.js",
     "types": "lib/es6/index.d.ts",

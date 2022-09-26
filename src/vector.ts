@@ -9,7 +9,7 @@ class VecN<DIM extends number> {
     }
 
     private _makeThis(): this {
-        return (this as any).__proto__.constructor(new Array(this.v.length).fill(0));
+        return new (this as any).__proto__.constructor(new Array(this.v.length).fill(0));
     }
 
     public map(fn: (v: number, idx: number) => number): this {
