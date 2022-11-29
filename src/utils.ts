@@ -13,8 +13,12 @@ function intersectSphereSphere(c1: Vec2, r1: number, c2: Vec2, r2: number): bool
     return c1.sub(c2).magnitude() < (r1 + r2)
 }
 
-function inRange(v: number, min: number, max: number): boolean { return v > min && v < max }
-function inRangeIncl(v: number, min: number, max: number): boolean { return v >= min && v <= max }
+function inRange(v: number, min: number, max: number): boolean {
+    return v > min && v < max
+}
+function inRangeIncl(v: number, min: number, max: number): boolean {
+    return v >= min && v <= max
+}
 
 function clamp(v: number, min: number, max: number): number {
     return Math.max(min, Math.min(max, v));
