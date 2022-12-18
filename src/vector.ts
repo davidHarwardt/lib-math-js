@@ -48,9 +48,11 @@ class VecN<DIM extends number> {
 
     public sqrMagnitude(): number { return this.dot(this); }
     public magnitude(): number { return Math.sqrt(this.dot(this)); }
-
+    public distance(other: this): number { return this.sub(other).magnitude() }
+ 
     public normalized(): this { return this.divS(this.magnitude()) }
     public inverted(): this { return this.multS(-1) }
+    public withLength(len: number): this { return this.normalized().multS(len) }
 
     public lerp(target: this, v: number): this { return this.multS(1 - v).add(target.multS(v)) }
 
